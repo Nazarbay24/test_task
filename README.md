@@ -13,46 +13,46 @@ API
 
 [POST] /login
   - Авторизация.
-  body:
-    username: "test"
-    password: "123456"
-  URL: 
-    localhost:8084/api/login
+  - body:
+     - username: "test"
+     - password: "123456"
+  - URL: 
+     - localhost:8084/api/login
     
 
 [GET] /logout
   - Выход.
-  URL:
-    localhost:8084/api/logout
+  - URL:
+     - localhost:8084/api/logout
     
     
 [GET] /refresh-token
   - Обновление токена.
-  URL:
-    localhost:8084/api/refresh-token
+  - URL:
+     - localhost:8084/api/refresh-token
     
     
 [POST] /create-link
   - Создание ссылки.
-  body:
+  - body:
 {
     "link": "https://google.com",
     "token": "goo",
     "private_status": false
 }
-  URL:
-    localhost:8084/api/create-link
+  - URL:
+     - localhost:8084/api/create-link
     
     
 [GET] /my-links
   - Получение своих ссылок.
-  URL:
-    localhost:8084/api/my-links
+  - URL:
+    - localhost:8084/api/my-links
     
     
 [GET] /{username}/{token}
   - Переход по ссылке
-  URL:
-    localhost:8084/api/test/goo
+  - URL:
+    - localhost:8084/api/test/goo
 
 
