@@ -3,9 +3,9 @@
 есть postman_collection.json
 
 комманды
-  php artisan migrate
-  php artisan db:seed
-  php artisan optimize
+  - php artisan migrate
+  - php artisan db:seed
+  - php artisan optimize
   
   
 
